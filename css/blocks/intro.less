@@ -1,21 +1,44 @@
 // main: ../style.less
 
+.intro {
+    @media @mobile {
+        margin-top: 100px;
+    }
+}
+
 .intro__inner {
     display: flex;
     padding-top: 100px;
     padding-bottom: 120px;
     position: relative;
     border-bottom: 1px solid fade(@gray, 30%);
+
+    @media @tablet {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
 }
 
 .intro__content {
     width: 50%;
+
+    @media @mobile {
+        width: 60%;
+    }
+
+    @media @mobile-sm {
+        width: 100%;
+    }
 }
 
 .intro__subtitle {
     font-size: 32px;
     font-weight: 200;
     color: @black;
+
+    @media @tablet {
+        font-size: 23px;
+    }
 }
 
 .intro__title {
@@ -23,6 +46,10 @@
     font-size: 45px;
     color: @black;
     font-weight: 700;
+
+    @media @tablet {
+        font-size: 30px;
+    }
 }
 
 .intro__text {
@@ -36,4 +63,18 @@
     bottom: -1px;
     right: 0;
     z-index: 1;
+
+    @media @tablet {
+        width: 350px;
+    }
+
+    @media @mobile {
+        width: 300px;
+    }
+
+    @media @mobile-sm {
+        display: none;
+    }
+
+
 }

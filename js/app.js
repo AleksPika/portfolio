@@ -111,5 +111,16 @@ $(function () {
         let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
         currentSlider.slick("slickNext");
     });
+
+    /*--------------------nav*/
+
+    const navToggle = $("#navToggle");
+    const nav = $("#nav");
+
+    navToggle.on("click", function (event) {
+        event.preventDefault();
+
+        nav.toggleClass("show");
+    });
     
 });

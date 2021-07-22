@@ -2,14 +2,26 @@
 
 .contact {
     display: flex;
-    background: url(https://via.placeholder.com/477x700) right center no-repeat;
+
 }
 
 .contact__left {
     width: 47%;
     padding: 30px;
+
+    @media @mobile {
+        width: 100%;
+    }
 }
 
+.contact__right {
+    width: 53%;
+    background: url(https://via.placeholder.com/477x700) center no-repeat;
+
+    @media @mobile {
+        display: none;
+    }
+}
 
 .contact__info {
     margin: 30px 0 45px;
